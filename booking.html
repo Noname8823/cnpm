@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Reservation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Table Reservation</h1>
+    <p class="header__subtitle">Please choose a table and time that suits you</p>
+  </header>
+
+  <main class="reservation-container">
+    <form class="reservation-form" action="index.html" method="GET">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- Number of Guests -->
+      <div class="form-group">
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required>
+          <option value="1">1 person</option>
+          <option value="2">2 people</option>
+          <option value="3">3 people</option>
+          <option value="4">4 people</option>
+          <option value="5">5 people</option>
+          <option value="6">6 people</option>
+          <option value="7">7 people</option>
+          <option value="8">8 people</option>
+          <option value="9">9 people</option>
+          <option value="10+">10+ people</option>
+        </select>
+      </div>
+
+      <!-- Reservation Date -->
+      <div class="form-group">
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <!-- Reservation Time -->
+      <div class="form-group">
+        <label for="time">Reservation Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+
+      <!-- Notes -->
+      <div class="form-group">
+        <label for="note">Notes:</label>
+        <textarea id="note" name="note" rows="3" placeholder="Additional notes (if any)"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-submit">Reserve Table</button>
+    </form>
+  </main>
+</body>
+</html>
